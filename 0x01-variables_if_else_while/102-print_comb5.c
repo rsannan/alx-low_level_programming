@@ -37,7 +37,7 @@ for (num1 = 0; num1 < 10; num1++)
 		}
 	}
 }
-putchar('\n')
+putchar('\n');
 
 return (0);
 }
