@@ -20,16 +20,19 @@ for (num1 = 0; num1 < 10; num1++)
 		{
 			for (num4 = 0; num4 < 10; num4++)
 			{
-				putchar(num1 + '0');
-				putchar(num2 + '0');
-				putchar(' ');
-				putchar(num3 + '0');
-				putchar(num4 + '0');
-				if (!((num1 == 9) && (num2 == 9) && (num3 == 9) && (num4 == 9)))
-					{
-						putchar(',');
-						putchar(' ');
-					}
+				if ((num1 <= num3) && (num2 < num4))
+				{
+					putchar(num1 + '0');
+					putchar(num2 + '0');
+					putchar(' ');
+					putchar(num3 + '0');
+					putchar(num4 + '0');
+					if (!((num2 == 8) && (num4 == 9)))
+						{
+							putchar(',');
+							putchar(' ');
+						}
+				}
 			}
 		}
 	}
