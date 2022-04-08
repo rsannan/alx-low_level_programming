@@ -7,11 +7,13 @@
 
 int main(void)
 {
-char ch;
+int num = 0;
 
-for (ch = 'a'; ch <= 'z'; ch++)
+while (num < 10)
 {
-	putchar(ch);
+	printf("%d", num);
+	num++;
 }
-return (0)
+
+return (0);
 }
