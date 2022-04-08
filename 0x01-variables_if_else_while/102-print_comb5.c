@@ -30,7 +30,7 @@ for (num1 = 0; num1 < 10; num1++)
 					if (!((num2 == 8) && (num4 == 9)))
 					{
 						putchar(',');
-						putchar(' '):
+						putchar(' ');
 					}
 				}
 			}
