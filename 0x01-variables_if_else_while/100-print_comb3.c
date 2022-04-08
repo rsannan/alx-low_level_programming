@@ -1,26 +1,28 @@
-#include <stdio.h>
+ #include <stdio.h>
+ #include <stdlib.h>
 /**
-* main - Prints combination of two digits
-*
-* Return: Always o
-*/
+ * main - prints all combination of numbers
+ *
+ * Return: Always 0
+ */
 
 int main(void)
 {
-int num;
 int num1;
+int num2;
 
-for (num = 0; num <= 9; num++)
+for (num1 = 0; num1 < 10; num1++)
 {
-	putchar(num + '0');
-	for (num1 = 1; num1 <= 9; num1++)
-	{
-		putchar(num1 + '0');
-		putchar(',');
-		putchar(' ');
-	}
+        for (num2 = 1; num2 < 10; num2++)
+        {
+                putchar(num1 + '0');
+                putchar(num2 + '0');
+                putchar(',');
+                putchar(' ');
+        }
 }
+ 
 putchar('\n');
 
-return (0);
+ return (0);
 }
