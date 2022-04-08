@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
-* main -
+* main - prints numbers
 *
-* Return:
+* Return: always 0
 */
 
 int main(void)
@@ -14,6 +14,6 @@ while (num < 10)
 	printf("%d", num);
 	num++;
 }
-
+printf("\n");
 return (0);
 }

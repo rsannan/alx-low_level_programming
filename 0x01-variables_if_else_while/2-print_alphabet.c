@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
-* main -
+* main - prints alphabet
 *
-* Return:
+* Return: always o
 */
 
 int main(void)
@@ -13,5 +13,5 @@ for (ch = 'a'; ch <= 'z'; ch++)
 {
 	putchar(ch);
 }
-return (0)
+return (0);
 }
