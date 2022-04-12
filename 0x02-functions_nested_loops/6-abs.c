@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 * _abs - get absolute value of int
-* @int: number to be absoluted
+* @num: number to be absoluted
 *
 * Return: Always result
 */
