@@ -6,12 +6,12 @@
 
 void print_alphabet(void)
 {
-int num = 0
+int num = 0;
  
 while (num < 26)
 {
 	putchar(num + 'a');
-	num++
+	num++;
 }
 putchar('\n');
 return;
