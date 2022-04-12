@@ -29,6 +29,7 @@ while (a < 3)
 				while (d < 10)
 				{
 					_putchar(d + '0');
+					_putchar('\n')
 					d++;
 				}
 				c++;
