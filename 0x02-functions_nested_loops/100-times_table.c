@@ -21,7 +21,7 @@ for (column = 0; column <= n; column++)
 		product = row * n;
 		tens = product / 10;
 		ones = product % 10;
-		if (if column == 0)
+		if (column == 0)
 		{
 			_putchar(0);
 		}
