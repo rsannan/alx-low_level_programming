@@ -13,7 +13,7 @@ if (num < 0)
 {
 	result = -((num) % 10);
 }
-else 
+else
 {
 	result = (num % 10);
 }
