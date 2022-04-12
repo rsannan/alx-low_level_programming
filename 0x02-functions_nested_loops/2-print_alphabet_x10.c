@@ -1,6 +1,7 @@
+#include "main.h"
 /**
-* main - Prints lowercase alphabet 10x
-* 
+* print_alphabet_x10 - Prints lowercase alphabet 10x
+*
 * Return: void
 */
 
