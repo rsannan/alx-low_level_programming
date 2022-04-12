@@ -11,7 +11,7 @@ int num = 0;
  
 while (num < 26)
 {
-	putchar(num + 'a');
+	_putchar(num + 'a');
 	num++;
 }
 putchar('\n');
