@@ -16,7 +16,7 @@ for (a = 0; a < 2; a++)
 {
 	for (b = 0; b < 10; b++)
 	{
-		for (c = 0; c < 7; c++)
+		for (c = 0; c < 6; c++)
 		{
 			for (d = 0; d < 10; d++)
 			{
@@ -24,15 +24,12 @@ for (a = 0; a < 2; a++)
 				{
 					if ((a + b + c + d) <= 19)
 					{
-					if (((c * 10) + d) <= 60)
-					{
 						_putchar(a + '0');
 						_putchar(b + '0');
 						_putchar(':');
 						_putchar(c + '0');
 						_putchar(d + '0');
 						_putchar('\n');
-					}
 					}
 				}
 			}
