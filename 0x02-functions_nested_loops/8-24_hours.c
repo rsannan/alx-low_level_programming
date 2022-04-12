@@ -20,7 +20,7 @@ while (a < 3)
 		if (!((a == 2) && (b > 4)))
 		{
 			_putchar(b + '0');
-			_putchar(':')
+			_putchar(':');
 			while (c < 7)
 			{
 				int d = 0;
