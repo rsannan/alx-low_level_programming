@@ -20,16 +20,19 @@ for (a = 0; a < 2; a++)
 		{
 			for (d = 0; d < 10; d++)
 			{
-				if (!((a == 2) && (b > 4)))
+				if (!((a == 2) && (b >= 4)))
 				{
-					if (!((c == 6) && (d > 0)))
+					if (!((a == 2) && (b == 3) && (c ==6)))
 					{
-						_putchar(a + '0');
-						_putchar(b + '0');
-						_putchar(':');
-						_putchar(c + '0');
-						_putchar(d + '0');
-						_putchar('\n');
+						if (!((c == 6) && (d > 0)))
+						{
+							_putchar(a + '0');
+							_putchar(b + '0');
+							_putchar(':');
+							_putchar(c + '0');
+							_putchar(d + '0');
+							_putchar('\n');
+						}
 					}
 				}
 			}
