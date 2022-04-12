@@ -14,6 +14,6 @@ while (num < 26)
 	_putchar(num + 'a');
 	num++;
 }
-putchar('\n');
+_putchar('\n');
 return;
 }

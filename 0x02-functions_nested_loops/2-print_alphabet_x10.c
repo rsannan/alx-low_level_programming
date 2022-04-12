@@ -14,10 +14,10 @@ while (num < 10)
 
 	while (alpha < 26)
 	{
-		putchar (alpha + 'a');
+		_putchar(alpha + 'a');
 		alpha++;
 	}
-	putchar('\n');
+	_putchar('\n');
 	num++;
 }
 return;
