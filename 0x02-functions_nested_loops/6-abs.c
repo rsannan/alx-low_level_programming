@@ -6,19 +6,19 @@
 * Return: Always result
 */
 
-int _abs(int)
+int _abs(int num)
 {
 int result;
 
 if (int < 0)
 {
-	result = -(int);
+	result = -(int num);
 
 	return (result);
 }
 else
 {
-	result = int;
+	result = num;
 
 	return (result);
 }
