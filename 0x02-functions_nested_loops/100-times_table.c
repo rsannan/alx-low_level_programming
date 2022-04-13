@@ -58,6 +58,7 @@ for (row = 0; row <= n; row++)
 			}
 		}
 	}
+	putchar('\n')
 }
 return;
 }
