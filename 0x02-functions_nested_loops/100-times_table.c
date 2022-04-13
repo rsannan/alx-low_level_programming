@@ -14,9 +14,9 @@ int tens;
 int ones;
 int product;
 
-for (column = 0; column <= n; column++)
+for (row = 0; row <= n; column++)
 {
-	for (row = 0; row <= n; row++)
+	for (column = 0; column <= n; row++)
 	{
 		product = row * n;
 		tens = product / 10;
