@@ -1,61 +1,50 @@
 #include "main.h"
 /**
-* print_times_table - prints n times table
-* @n: times table
-*
-* Return: Always void
-*/
-
+ * print_times_table - Prints a multiplication table up to n
+ * @n: The number to be treated
+ *
+ * Return: Number matrix
+ */
 void print_times_table(int n)
 {
-int row;
-int column;
-int tens;
-int ones;
-int product;
-int hundreds;
+	int x, y, z;
 
-for (row = 0; row <= n; row++)
-{
-	for (column = 0; column <= n; column++)
+	if (n >= 0 && n <= 14)
 	{
-		if ((n < 15) && (n > 0))
+		for (x = 0; x <= n; x++)
 		{
-			product = row * column;
-			tens = ((product / 10) %10);
-			ones = product % 10;
-			hundreds = (product / 10) / 10;
-			if (column == 0)
+			for (y = 0; y <= n; y++)
 			{
-				_putchar('0');
+				z = x * y;
+				if (z > 99)
+				{
+					_putchar(',');
+					_putchar(32);
+					_putchar((z / 100) + '0');
+					_putchar(((z / 10) % 10) + '0');
+					_putchar((z % 10) + '0');
+				}
+				else if (z > 9)
+				{
+					_putchar(',');
+					_putchar(32);
+					_putchar(32);
+					_putchar(((z / 10) % 10) + '0');
+					_putchar((z % 10) + '0');
+				}
+				else
+				{
+					if (y != 0)
+					{
+						_putchar(',');
+						_putchar(32);
+						_putchar(32);
+						_putchar(32);
+					}
+					_putchar(z + '0');
+				}
 			}
-			else if (product < 10)
-			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(ones + '0');
-			}
-			else if (product < 100)
-			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(tens + '0');
-				_putchar(ones + '0');
-			}
-			else
-			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(hundreds + '0');
-				_putchar(tens + '0');
-				_putchar(ones + '0');
-			}
+			_putchar('\n');
 		}
 	}
-	_putchar('\n');
-}
-return;
 }
