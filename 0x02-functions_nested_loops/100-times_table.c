@@ -22,7 +22,7 @@ for (row = 0; row <= n; row++)
 		if ((n < 15) && (n > 0))
 		{
 			product = row * column;
-			tens = product / 10;
+			tens = ((product / 10) %10);
 			ones = product % 10;
 			hundreds = (product / 10) / 10;
 			if (column == 0)
@@ -42,15 +42,12 @@ for (row = 0; row <= n; row++)
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
-				_putchar(' ');
 				_putchar(tens + '0');
 				_putchar(ones + '0');
 			}
 			else
 			{
 				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
 				_putchar(' ');
 				_putchar(hundreds + '0');
 				_putchar(tens + '0');
