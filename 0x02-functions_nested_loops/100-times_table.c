@@ -1,4 +1,4 @@
-#include "main.h"
+i#include "main.h"
 /**
 * print_times_table - prints n times table
 * @n: times table
@@ -14,9 +14,9 @@ int tens;
 int ones;
 int product;
 
-for (row = 0; row <= n; column++)
+for (row = 0; row <= n; row++)
 {
-	for (column = 0; column <= n; row++)
+	for (column = 0; column <= n; column++)
 	{
 		product = row * n;
 		tens = product / 10;
