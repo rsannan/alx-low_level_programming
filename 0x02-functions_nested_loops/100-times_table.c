@@ -58,7 +58,7 @@ for (row = 0; row <= n; row++)
 			}
 		}
 	}
-	putchar('\n')
+	putchar('\n');
 }
 return;
 }
