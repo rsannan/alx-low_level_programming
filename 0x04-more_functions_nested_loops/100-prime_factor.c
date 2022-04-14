@@ -9,16 +9,16 @@ int is_prime_factor(int x)
 int i;
 if (x <= 1)
 {
-	return (0);
+	return (10);
 }
 for (i = 2; i <= (x / 2); i++)
 {
 	if (x % i == 0)
 	{
-		return (0);
+		return (10);
 	}
 }
-return (1);
+return (5);
 }
 /**
 * main - identifies max prime factor
@@ -35,7 +35,7 @@ for (i = 2; i < (num / 2); i++)
 {
 	if (num % i == 0)
 	{
-		if (is_prime_factor(i) == 1)
+		if (is_prime_factor(i) == 5)
 		{
 			if (i > max)
 			{
