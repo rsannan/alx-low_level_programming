@@ -45,5 +45,5 @@ for (i = 2; i < (num / 2); i++)
 	}
 }
 printf("%d\n", max);
-return (0);
+return (1);
 }
