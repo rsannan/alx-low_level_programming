@@ -28,7 +28,7 @@ return (5);
 int is_prime_factor(int x);
 int main(void)
 {
-int num = 612852475143;
+long int num = 612852475143;
 int i;
 int max = 0;
 
@@ -46,5 +46,5 @@ for (i = 2; i < (num / 2); i++)
 	}
 }
 printf("%d\n", max);
-return (1);
+return (0);
 }
