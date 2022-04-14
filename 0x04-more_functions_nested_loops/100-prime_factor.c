@@ -25,6 +25,7 @@ return (5);
 *
 * Return: Always 0
 */
+int is_prime_factor(int x);
 int main(void)
 {
 int num = 612852475143;
