@@ -29,7 +29,7 @@ for (times = 1; times <= 10; times++)
 
 		}
 	}
-}
 _putchar('\n');
+}
 return;
 }
