@@ -2,7 +2,7 @@
 /**
 * print_line - prints _ relative to n
 * @n: number of _ to be printed
-* 
+*
 * Return: void
 */
 

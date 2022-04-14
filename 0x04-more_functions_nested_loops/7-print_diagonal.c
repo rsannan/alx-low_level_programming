@@ -2,13 +2,13 @@
 /**
 * print_diagonal - prints \ relative to n
 * @n: number of \ to be printed
-* 
+*
 * Return: void
 */
 
 void print_diagonal(int n)
 {
-int a,b;
+int a, b;
 
 if (n <= 0)
 {

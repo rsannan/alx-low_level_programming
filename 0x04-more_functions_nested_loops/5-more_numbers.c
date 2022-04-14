@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 * more_numbers - prints up to 14
-* 
+*
 * Return: void
 */
 
@@ -18,7 +18,7 @@ for (a = 0; a < 2; a++)
 		tens = product / 10;
 		if (product < 15)
 		{
-			if(a != 0)
+			if (a != 0)
 			{
 				_putchar(tens + '0');
 			}
