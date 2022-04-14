@@ -7,24 +7,27 @@
 
 void more_numbers(void)
 {
-int a, b, ones, tens, product;
+int a, b, times, ones, tens, product;
 
-for (a = 0; a < 2; a++)
+for (times = 1; times <= 10; times++)
 {
-	for (b = 0; b < 10; b++)
+	for (a = 0; a < 2; a++)
 	{
-		product = (a * 10) + b;
-		ones = product % 10;
-		tens = product / 10;
-		if (product < 15)
+		for (b = 0; b < 10; b++)
 		{
-			if (a != 0)
+			product = (a * 10) + b;
+			ones = product % 10;
+			tens = product / 10;
+			if (product < 15)
 			{
-				_putchar(tens + '0');
-			}
+				if (a != 0)
+				{
+					_putchar(tens + '0');
+				}
 			_putchar(ones + '0');
-		}
+			}
 
+		}
 	}
 }
 return;
