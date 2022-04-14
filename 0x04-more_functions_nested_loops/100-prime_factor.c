@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdbool.h>
 /**
 * is_prime_factor - finds if a factor is a prime number
 * @x:  number to be identified as a prime number
