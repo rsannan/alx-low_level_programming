@@ -1,49 +1,24 @@
 #include <stdio.h>
 /**
-* is_prime_factor - finds if a factor is a prime number
-* @x:  number to be identified as a prime number
-* Return: 1 if prime factor 0 otherwise
-*/
-int is_prime_factor(int x)
-{
-int i;
-if (x <= 1)
-{
-	return (10);
-}
-for (i = 2; i <= (x / 2); i++)
-{
-	if (x % i == 0)
-	{
-		return (10);
-	}
-}
-return (5);
-}
-/**
-* main - identifies max prime factor
+* main - finds if a factor is a prime number
 *
-* Return: Always 0
+* Return: print largest prime factor
 */
 int main(void)
 {
-long int num = 612852475143;
-int i;
-int max = 0;
+	long num = 612852475143;
+	long divisor = 2;
+	long larg_prim = 0;
 
-for (i = 2; i < (num / 2); i++)
-{
-	if (num % i == 0)
+	while (num != 1)
 	{
-		if (is_prime_factor(i) == 5)
+		if (num % divisor == 0)
 		{
-			if (i > max)
-			{
-				max = i;
-			}
+			num = num / divisor;
+			larg_prim = divisor;
 		}
+		divisor += 1;
 	}
-}
-printf("%d\n", max);
-return (0);
+	printf("%ld\n", larg_prim);
+	return (0);
 }
