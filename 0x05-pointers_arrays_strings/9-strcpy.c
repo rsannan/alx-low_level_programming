@@ -17,7 +17,7 @@ if (len != 0)
 {
 	for (i = 0; i <= len; i++)
 	{
-		ch[i] = *(src + (len - (i + 1)));
+		ch[i] = *(src + i);
 	}
 
 	for (j = 0; j <= len; j++)
