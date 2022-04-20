@@ -15,7 +15,7 @@ if (len != 0)
 {
 	if ((len - 1) % 2 == 0)
 	{
-		for (i = ((len - 1) / 2); i < len; i++)
+		for (i = ((len - 1) / 2) + 1; i < len; i++)
 		{
 			_putchar(*(str + i));
 
@@ -23,7 +23,7 @@ if (len != 0)
 	}
 	else if ((len - 1) % 2 != 0)
 	{
-		for (i = ((len - 2) / 2); i < (len - 1); i++)
+		for (i = ((len - 2) / 2) + 1; i < (len - 1); i++)
 		{
 			_putchar(*(str + i));
 		}
