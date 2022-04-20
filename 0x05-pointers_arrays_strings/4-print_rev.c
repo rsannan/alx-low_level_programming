@@ -12,7 +12,7 @@ int len = _strlen(s);
 
 while (len >= 0)
 {
-	s = s + len;
+	s + len;
 	_putchar(*s);
 	len--;
 }
