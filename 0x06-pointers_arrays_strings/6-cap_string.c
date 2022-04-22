@@ -17,6 +17,12 @@ while (*(ch + i) != '\0')
 			ch[i + 1] = ch[i + 1] - 32;
 			break;
 		}
+	case '	' :
+		if (ch[i + 1] <= 122 && ch[i + 1] >= 97)
+{
+			ch[i + 1] = ch[i + 1] - 32;
+			break;
+}
 	}
 	i++;
 }
