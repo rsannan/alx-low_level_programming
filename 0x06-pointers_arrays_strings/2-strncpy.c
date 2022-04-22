@@ -10,7 +10,10 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-int lendest, lensrc,i;
+int lendest, lensrc, i;
+
+lendest = _strlen(dest);
+lensrc = _strlen(src);
 if (n > lensrc)
 {
 	n = (lensrc + 1)
@@ -35,6 +38,7 @@ return (dest);
 int _strlen(char *s)
 {
 int len = 0;
+
 while (*s != '\0')
 {
 	len++;
