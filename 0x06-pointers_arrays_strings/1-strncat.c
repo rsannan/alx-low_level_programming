@@ -22,9 +22,9 @@ while (src[j] != '\0')
 	if (j <= n)
 	{
 		dest[i] = src[j];
-		j++;
-		i++;
 	}
+	i++;
+	j++;
 }
 if (j < n)
 {
