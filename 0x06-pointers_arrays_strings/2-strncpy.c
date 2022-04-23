@@ -10,40 +10,23 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-int lendest, lensrc, i;
+int i = 0;
+int j = 0;
 
-lendest = _strlen(dest);
-lensrc = _strlen(src);
-if (n > lensrc)
+while (dest[i] != '\0')
 {
-	n = (lensrc + 1)
+	i++;
 }
-for (i = 0; i < n; i++)
-{
-	*(dest + i) = *(src + i);
 
+while (j < n)
+{
+	dest[j] = src[j];
+	j++;
 }
+if (i < n)
+{
+dest[j] = '\0';
 }
 
 return (dest);
-}
-
-/**
-* _strlen - gets length of a string
-* @s: string
-*
-* Return: always len
-*/
-
-int _strlen(char *s)
-{
-int len = 0;
-
-while (*s != '\0')
-{
-	len++;
-	s++;
-}
-
-return (len);
 }
