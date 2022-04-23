@@ -7,3 +7,4 @@ void reverse_array(int *a, int n);
 char *string_toupper(char *ch);
 char *cap_string(char *ch);
 int _strcmp(char *s1, char *s2);
+void *malloc(size_t size);
