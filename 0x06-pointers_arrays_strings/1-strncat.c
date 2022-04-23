@@ -10,11 +10,9 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-int lendest, lensrc, i;
+int i;
 
-lendest = _strlen(dest);
-lensrc = _strlen(src);
-
+while (*(src + i) != )
 for (i = 0; i < (lensrc + 1); i++)
 {
 	if (i <= n)
