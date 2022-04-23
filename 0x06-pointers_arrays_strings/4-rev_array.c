@@ -13,7 +13,7 @@ void reverse_array(int *a, int n)
 int *num;
 int i, j;
 
-num = (int*)malloc(n * sizeof(int));
+num = (int *)malloc(n * sizeof(int));
 for (i = 0; i < n; i++)
 {
 	num[i] = a[n - (i + 1)];
