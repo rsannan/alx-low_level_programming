@@ -22,6 +22,7 @@ while (ch[i] != '\0')
 			ch[i] = num[j];
 		}
 	}
+	i++;
 }
 
 return (ch);
