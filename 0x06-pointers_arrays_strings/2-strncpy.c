@@ -39,7 +39,7 @@ else if (k < n)
 		dest[j] = src[j];
 		j++;
 	}
-	while (j < i)
+	while (j <= i)
 	{
 		dest[j] = '\0';
 		j++;
