@@ -34,12 +34,12 @@ if (n < k)
 
 else if (k < n)
 {
-	while (j < n)
+	while (j < k)
 	{
 		dest[j] = src[j];
 		j++;
 	}
-	while (j <= i)
+	while (j < n)
 	{
 		dest[j] = '\0';
 		j++;
