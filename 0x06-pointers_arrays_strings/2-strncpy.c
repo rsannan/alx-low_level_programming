@@ -18,14 +18,29 @@ while (dest[i] != '\0')
 	i++;
 }
 
-while (j < n)
+if(i > n)
 {
-	dest[j] = src[j];
-	j++;
+	while (j < i)
+	{
+		if (j < n)
+		{
+			dest[j] = src[j];
+			j++;
+		}
+		else
+		{
+			dest[j] = '\0';
+			j++;
+		}
+	}
 }
-if (i < n)
+else
 {
-dest[j] = '\0';
+	while (j < n)
+	{
+		dest[j] = src[j];
+		j++;
+	}
 }
 
 return (dest);
