@@ -10,12 +10,12 @@ char *rot13(char *ch)
 {
 int i = 0;
 int j;
-char dec[53] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-char enc[53] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+char dec[52] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+char enc[52] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 while (ch[i])
 {
-for (j = 0; j < 53; j++)
+for (j = 0; j < 52; j++)
 {
 	if (ch[i] == dec[j])
 	{
