@@ -13,9 +13,9 @@ int j;
 char dec[53] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 char enc[53] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-while (ch[i] != '\0')
+while (ch[i])
 {
-for (j = 0; j < 52; j++)
+for (j = 0; j < 53; j++)
 {
 	if (ch[i] == dec[j])
 	{
