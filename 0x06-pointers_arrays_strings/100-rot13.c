@@ -20,6 +20,7 @@ for (j = 0; j < 52; j++)
 	if (ch[i] == dec[j])
 	{
 		ch[i] = enc[j];
+		break;
 	}
 }
 i++;
