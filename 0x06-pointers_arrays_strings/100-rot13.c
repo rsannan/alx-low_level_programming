@@ -15,7 +15,7 @@ char enc[53] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 while (ch[i] != '\0')
 {
-for (j = 0; j < 53; j++)
+for (j = 0; j < 52; j++)
 {
 	if (ch[i] == dec[j])
 	{
