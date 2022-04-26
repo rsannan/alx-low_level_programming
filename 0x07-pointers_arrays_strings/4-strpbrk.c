@@ -11,7 +11,7 @@ char *_strpbrk(char *s, char *accept)
 {
 unsigned int i = 0;
 unsigned int j;
-char *p;
+char *p = s;
 while (s[i] != '\0')
 {
 	for (j = 0; j != '\0'; j++)
@@ -23,6 +23,10 @@ while (s[i] != '\0')
 		}
 	}
 	i++;
+}
+if (accept = '\0')
+{
+	return (*p);
 }
 return ('\0');
 }
