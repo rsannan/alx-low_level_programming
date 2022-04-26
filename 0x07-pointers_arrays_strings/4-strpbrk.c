@@ -20,8 +20,8 @@ while (s[i] != '\0')
 		{
 			return (&s[i]);
 		}
-	i++;
 	}
+	i++;
 }
 if (accept[i] == '\0')
 {
