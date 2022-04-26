@@ -26,7 +26,7 @@ while (s[i] != '\0')
 }
 if (accept = '\0')
 {
-	return (s[i]);
+	return (&s[i]);
 }
 return ('\0');
 }
