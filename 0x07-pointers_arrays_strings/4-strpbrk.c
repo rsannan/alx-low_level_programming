@@ -20,7 +20,12 @@ while (s[i] != '\0')
 		if (s[i] == accept[j])
 		{
 			f = 1;
+			break;
 		}
+	}
+	if (f == 1)
+	{
+		break;
 	}
 	i++;
 }
@@ -29,7 +34,7 @@ if (f == 1)
 	return (&s[i]);
 }
 else
-{ 
-return ('\0');
+{
+	return ('\0');
 }
 }
