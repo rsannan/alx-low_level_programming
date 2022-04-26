@@ -3,10 +3,24 @@
 * _strspn -Returns the number of bytes in the initial segment of s
 * @s: character pointer
 * @accept: character pointer
-* Return: s
+* Return: i
 */
 
 unsigned int _strspn(char *s, char *accept)
 {
+unsigned int i;
 
+while (s[i] != '\0')
+{
+	if (s[i] == accept[i])
+	{
+		i++;
+	}
+	else
+	{
+		break;
+	}
+}
+
+return (i);
 }
