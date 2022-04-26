@@ -10,7 +10,7 @@ unsigned int _strspn(char *s, char *accept)
 {
 unsigned int i = 0;
 unsigned int j;
-unsigned int k = 0;
+unsigned int len = 0;
 
 while (s[i] != '\0')
 {
@@ -18,7 +18,7 @@ while (s[i] != '\0')
 	{
 		if (s[i] == accept[j])
 		{
-			k++;
+			len++;
 			break;
 		}
 	}
@@ -28,5 +28,9 @@ while (s[i] != '\0')
 	}
 	i++;
 }
-return (k + 1);
+if (accept[i] == '\0')
+{
+	return ('\0');
+}
+return (len);
 }
