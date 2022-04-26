@@ -20,7 +20,7 @@ while (*s)
 			len++;
 			break;
 		}
-		else if (accepted[i + 1]  == '\0')
+		else if (accept[i + 1]  == '\0')
 		{
 			return (len);
 		}
