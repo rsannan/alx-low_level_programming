@@ -19,6 +19,7 @@ while (s[i] != '\0')
 		if (s[i] == accept[j])
 		{
 			k++;
+			break;
 		}
 	}
 	if (accept[j] == '\0')
