@@ -19,12 +19,5 @@ while (s[i] != '\0')
 	}
 	i++;
 }
-if (s[i] == '\0')
-{
-	return (&s[i]);
-}
-else
-{
-	return (&s[i + 1]);
-}
+return (NULL);
 }
