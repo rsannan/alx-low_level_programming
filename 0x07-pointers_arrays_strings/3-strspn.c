@@ -28,5 +28,5 @@ while (s[i] != '\0')
 	}
 	i++;
 }
-return (k);
+return (k + 1);
 }
