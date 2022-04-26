@@ -24,7 +24,7 @@ while (s[i] != '\0')
 	}
 	i++;
 }
-if (*accept = '\0')
+if (accept[i] = '\0')
 {
 	return (&s[i]);
 }
