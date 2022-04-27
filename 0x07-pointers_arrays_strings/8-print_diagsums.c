@@ -20,7 +20,7 @@ for (i = 0; i < size; i++)
 	}
 }
 
-for (i = size; i > 0; i-- )
+for (i = size; i > 0; i--)
 {
 	for (j = size; j > 0; j--)
 	{
