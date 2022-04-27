@@ -32,7 +32,7 @@ for (i = (size - 1); i >= 0; i--)
 		}
 	}
 }
-printf("%d, %d", sum1, sum2);
+printf("%d, %d\n", sum1, sum2);
 
 return;
 }
