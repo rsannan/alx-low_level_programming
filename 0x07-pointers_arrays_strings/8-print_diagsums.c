@@ -16,6 +16,7 @@ for (i = 0; i < size; i++)
 		if (i == j)
 		{
 			sum1 = sum1 + (a[i] + j);
+			break;
 		}
 	}
 }
@@ -27,6 +28,7 @@ for (i = size; i > 0; i--)
 		if (i == j)
 		{
 			sum2 = sum2 + (a[i] + j);
+			break;
 		}
 	}
 }
