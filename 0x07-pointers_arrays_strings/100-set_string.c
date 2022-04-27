@@ -9,18 +9,13 @@
 
 void set_string(char **s, char *to)
 {
-unsigned int i, j = 0, len = 0;
+unsigned int i;
+i = 0;
 
-while (to[j] != '\0')
+while (*to)
 {
-	len++;
-	j++;
+	*(*(s + i)) = *to;
+	to++;
+	i++;
 }
-
-for (i = 0; i < len; i++)
-{
-	*(*(s + i)) = *(to + i);
-}
-
-return;
 }
