@@ -32,6 +32,7 @@ for (i = size; i > 0; i--)
 		}
 	}
 }
+printf("%d, %d", sum1, sum2);
 
 return;
 }
