@@ -23,9 +23,9 @@ for (i = 0; i < size; i++)
 
 for (i = size; i > 0; i--)
 {
-	for (j = size; j > 0; j--)
+	for (j = 0; j < size; j++)
 	{
-		if (i == j)
+		if ((size - (j + 1)) == i)
 		{
 			sum2 = sum2 + (a[i] + j);
 			break;
