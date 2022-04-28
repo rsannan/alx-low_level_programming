@@ -17,7 +17,10 @@ else
 	s++;
 	_print_rev_recursion(s);
 	_putchar(*s);
+	if (*s == s(1))
+	{
+		_putchar('\n');
+	}
 }
-_putchar('\n');
 return;
 }
