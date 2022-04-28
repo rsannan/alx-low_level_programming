@@ -14,10 +14,12 @@ if (*(s + 1) == '\0')
 }
 else
 {
-	s++;
-	_print_rev_recursion(s);
-	_putchar(*s);
-	if (*s == s[1])
+	_print_rev_recursion(s++);
+	if (*s != '\n')
+	{
+		_putchar(*s);
+	}
+	else
 	{
 		_putchar('\n');
 	}
