@@ -10,7 +10,7 @@ int square(int x, int y)
 {
 int squarenum;
 
-if (x ^ 2 == y)
+if ((x ^ 2) == y)
 {
 	return (x);
 }
@@ -20,7 +20,7 @@ else if (x > (y / 2))
 }
 else
 {
-	x = x + 1;
+	x = (x + 1);
 	squarenum = square(x, y);
 }
 return (squarenum);
