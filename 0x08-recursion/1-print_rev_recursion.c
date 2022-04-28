@@ -16,11 +16,8 @@ else
 {
 	s++;
 	_print_rev_recursion(s);
-	if (*s != '\n')
-	{
-		_putchar(*s);
-	}
-	else
+	_putchar(*s);
+	if (*(s -1) == '\n')
 	{
 		_putchar('\n');
 	}
