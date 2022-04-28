@@ -43,8 +43,12 @@ if ((x ^ 2) == n)
 {
 	return (x);
 }
+else if (n == 1)
+{
+	return (1);
+}
 else
 {
-	return (-1);
+ return (-1);
 }
 }
