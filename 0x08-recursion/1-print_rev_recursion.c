@@ -14,7 +14,7 @@ if (*s != '\0')
 	_print_rev_recursion(s);
 	_putchar(*s);
 }
-if (*(s - 1) == '\n')
+if (*(s) == '\n')
 {
 	_putchar('\n');
 }
