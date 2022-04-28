@@ -19,7 +19,7 @@ else
 {
 	s++;
 	x++;
-	i = x + len(s, x)
+	i = x + len(s, x);
 }
 return (i);
 }
