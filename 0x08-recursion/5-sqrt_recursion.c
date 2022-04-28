@@ -1,30 +1,29 @@
 #include "main.h"
 /**
-* sqrt_sub - subtracts x to find perfect square of x
-* @x: number
-* @y: odd subtracter
+* square - find perfect square of y
+* @x: square
+* @y: number
 *
-* Return: sum
+* Return: x or -1
 */
-int sqrt_sub(int x, int y)
+int square(int x, int y)
 {
-int sum;
+int squarenum;
 
-if (x == 0)
+if (x ^ 2 == y)
 {
-	return (0);
+	return (x);
 }
-else if (x < 0)
+else if (x > (y / 2))
 {
 	return (-1);
 }
 else
 {
-	y = y + 2;
-	x = x - y;
-	sum = 1 + sqrt_sub(x, y);
+	x = x + 1;
+	squarenum = square(x, y);
 }
-return (sum);
+return (squarenum);
 }
 /**
 * _sqrt_recursion - returns the natural square root of a number
@@ -37,18 +36,7 @@ int _sqrt_recursion(int n)
 {
 int x;
 
-x = sqrt_sub(n, -1);
+x = square(1, n);
 
-if ((x ^ 2) == n)
-{
-	return (x);
-}
-else if (n == 1)
-{
-	return (1);
-}
-else
-{
- return (-1);
-}
+return (x);
 }
