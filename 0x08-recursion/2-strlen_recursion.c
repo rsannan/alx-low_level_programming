@@ -20,4 +20,5 @@ else
 	s++;
 	_strlen_recursion(s);
 }
+return (len);
 }
