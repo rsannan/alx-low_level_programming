@@ -9,9 +9,9 @@
 
 int _pow_recursion(int x, int y)
 {
-if (y < 0)
 int sum;
 
+if (y < 0)
 {
 	return (-1);
 }
