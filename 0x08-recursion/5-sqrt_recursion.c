@@ -2,28 +2,25 @@
 /**
 * square - find perfect square of y
 * @x: square
-* @y: number
+* @n: number
 *
 * Return: x or -1
 */
-int square(int x, int y)
+int square(int x, int n)
 {
 int squarenum;
 
-if ((x ^ 2) == y)
+squarenum = x * x;
+if (squarenum == n)
 {
 	return (x);
 }
-else if (x > (y / 2))
+else if (x > n)
 {
 	return (-1);
 }
-else
-{
-	x = (x + 1);
-	squarenum = square(x, y);
-}
-return (squarenum);
+x = x + 1;
+return (square(x, n));
 }
 /**
 * _sqrt_recursion - returns the natural square root of a number
