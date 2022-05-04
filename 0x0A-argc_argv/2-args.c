@@ -7,7 +7,7 @@
 * Return: void
 */
 
-void main(int argc, char **argv)
+int main(int argc, char **argv)
 {
 int i;
 
@@ -21,5 +21,5 @@ while (argv[i][j] != '\0')
 }
 _putchar('\n');
 }
-return;
+return (0);
 }
