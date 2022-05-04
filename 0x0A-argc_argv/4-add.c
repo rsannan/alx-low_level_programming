@@ -51,12 +51,13 @@ int _atoi(char *s)
 int main(int argc, char **argv)
 {
 int i, sum = 0;
+
 if (argc < 2)
 {
 	_putchar('0');
 	_putchar('\n');
 }
-for (i = 0; i < argc; i++)
+for (i = 1; i < argc; i++)
 {
 	int j = 0;
 
