@@ -7,9 +7,8 @@
 * Return: void
 */
 
-void main(int argc, char **argv)
+void main(int argc, char **argv __attribute__((unused)))
 {
-(void)argv;
 int tens, ones;
 
 if (argc > 10)
