@@ -39,7 +39,7 @@ int _atoi(char *s)
 			break;
 	} while (*s++);
 
-	return (num * sign);
+	return (num);
 }
 /**
 * main - prints sum of positive numbers
@@ -62,7 +62,7 @@ for (i = 0; i < argc; i++)
 
 	while (argv[i][j] != '\0')
 	{
-		if (!(argv[i][j] <= 57 && argv[i] >= 48))
+		if (!(argv[i][j] <= 57 && argv[i][j] >= 48))
 		{
 			_putchar('E');
 			_putchar('r');
