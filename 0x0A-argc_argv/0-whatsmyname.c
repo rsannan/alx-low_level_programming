@@ -14,7 +14,7 @@ void main(int argc, char **argv)
 while (**argv != '\0')
 {
 	_putchar(**argv);
-	*argv++;
+	*(argv + 1);
 }
 _putchar('\n');
 
