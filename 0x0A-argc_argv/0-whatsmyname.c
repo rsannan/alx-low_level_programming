@@ -9,9 +9,9 @@
 
 void main(int argc, char **argv)
 {
-(void)(argc);
-int i = 0
+int i = 0;
 
+(void)argc;
 while (argv[0][i] != '\0')
 {
 	_putchar(argv[0][i]);
