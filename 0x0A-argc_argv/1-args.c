@@ -7,7 +7,7 @@
 * Return: void
 */
 
-void main(int argc, char **argv __attribute__((unused)))
+int main(int argc, char **argv __attribute__((unused)))
 {
 int tens, ones;
 
@@ -20,5 +20,5 @@ ones = argc % 10;
 _putchar(ones + '0');
 _putchar('\n');
 
-return;
+return (0);
 }
