@@ -16,7 +16,7 @@ if (argc > 10)
 	tens = ((argc / 10) % 10);
 	_putchar(tens + '0');
 }
-ones = argc % 10;
+ones = (argc % 10) - 1;
 _putchar(ones + '0');
 _putchar('\n');
 
