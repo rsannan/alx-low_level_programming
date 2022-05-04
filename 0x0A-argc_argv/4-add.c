@@ -56,6 +56,7 @@ if (argc < 2)
 {
 	_putchar('0');
 	_putchar('\n');
+	return (0);
 }
 for (i = 1; i < argc; i++)
 {
