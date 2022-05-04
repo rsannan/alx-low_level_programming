@@ -7,11 +7,10 @@
 * Return: void
 */
 
-int main(int argc, char **argv)
+int main(int argc __attribute__((unused)), char **argv)
 {
 int i = 0;
 
-(void)argc;
 while (argv[0][i] != '\0')
 {
 	_putchar(argv[0][i]);
