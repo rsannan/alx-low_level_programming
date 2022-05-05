@@ -17,7 +17,6 @@ while (*s)
 }
 return (i);
 }
-
 /**
 * str_concat - joins two strings in a third string
 * @s1: first string
@@ -27,18 +26,20 @@ return (i);
 */
 char *str_concat(char *s1, char *s2)
 {
-int lens1, lens2, i = 0, j = 0;
+int lens1 = 0, lens2 = 0, i = 0, j = 0;
 char *s;
 
 if (s1 == NULL)
 {
-	lens1 = 0;
 	lens2 = strlenn(s2);
 }
 else if (s2 == NULL)
 {
 	lens1 = strlenn(s1);
-	lens2 = 0;
+}
+else if (s1 == NULL && s2 == NULL)
+{
+	return (NULL);
 }
 else
 {
@@ -46,7 +47,11 @@ else
 	lens2 = strlenn(s2);
 }
 
-s = (char *)malloc(sizeof(char) * ((lens1 + lens2) - 1));
+s = (char *)malloc(sizeof(char) * (lens1 + lens2));
+if (s == NULL)
+{
+return (NULL);
+}
 while (i < lens1)
 {
 	s[i] = s1[i];
