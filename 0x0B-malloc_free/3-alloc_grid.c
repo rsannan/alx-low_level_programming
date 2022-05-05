@@ -29,11 +29,9 @@ if (s == NULL || s[l] == NULL)
 	for (l = 0; l < height; l++)
 	{
 		free(s[l]);
-		s[l] = NULL;
 	}
 	free(s);
-	s = NULL;
-	return (s);
+	return (NULL);
 }
 }
 for (i = 0; i < height; i++)
