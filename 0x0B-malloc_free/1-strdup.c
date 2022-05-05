@@ -26,8 +26,10 @@ return (i);
 char *_strdup(char *str)
 {
 int len, i;
+char *s;
+
 len = strlenn(str);
-char *s = (char *)malloc(sizeof(char) * len);
+s = (char *)malloc(sizeof(char) * len);
 if (len == 0)
 {
 	return (NULL);
