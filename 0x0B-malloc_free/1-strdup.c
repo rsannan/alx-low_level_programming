@@ -29,12 +29,12 @@ int len, i;
 char *s;
 
 len = strlenn(str);
-s = (char *)malloc(sizeof(char) * len);
+s = (char *)malloc(sizeof(char) * (len + 1));
 if (len == 0)
 {
-	return (NULL);
+	return ('\0');
 }
-else if (s == NULL)
+else if (s == NULL || str == NULL)
 {
 	return (NULL);
 }
