@@ -31,7 +31,7 @@ char *s;
 len = strlenn(str);
 s = (char *)malloc(sizeof(char) * (len + 1));
 
-if (str == '\0')
+if (*str == '\0')
 {
 	return (NULL);
 }
