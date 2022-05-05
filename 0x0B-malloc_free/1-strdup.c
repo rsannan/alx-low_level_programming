@@ -28,12 +28,14 @@ char *_strdup(char *str)
 int len, i;
 char *s;
 
-len = strlenn(str);
-s = (char *)malloc(sizeof(char) * (len + 1));
-
-if (*str == '\0')
+if (str == NULL)
 {
 	return (NULL);
+}
+else
+{
+	len = strlenn(str);
+	s = (char *)malloc(sizeof(char) * (len + 1));
 }
 if (s == NULL)
 {
