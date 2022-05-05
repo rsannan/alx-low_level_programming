@@ -22,7 +22,7 @@ for (l = 0; l < height; l++)
 {
 	s[l] = malloc(sizeof(int) * width);
 }
-for(l = 0; l < height; l++)
+for (l = 0; l < height; l++)
 {
 if (s == NULL || s[l] == NULL)
 {
@@ -33,7 +33,7 @@ if (s == NULL || s[l] == NULL)
 	}
 	free(s);
 	s = NULL;
-	return (NULL);
+	return (s);
 }
 }
 for (i = 0; i < height; i++)
