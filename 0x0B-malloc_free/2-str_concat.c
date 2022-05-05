@@ -31,7 +31,8 @@ char *s;
 
 if (s1 == NULL && s2 == NULL)
 {
-	return (NULL);
+	s = (char *)malloc(sizeof(char));
+	s[0] = '\0';
 }
 else if (s1 == NULL)
 {
