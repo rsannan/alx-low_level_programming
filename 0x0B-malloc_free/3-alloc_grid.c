@@ -24,7 +24,11 @@ for (l = 0; l < height; l++)
 }
 if (s == NULL)
 {
-	free(s); 
+	for (l = 0; l < height; l++)
+	{
+		free(s[l]);
+	}
+	free(s);
 	return (NULL);
 }
 for (i = 0; i < height; i++)
