@@ -30,11 +30,12 @@ char *s;
 
 len = strlenn(str);
 s = (char *)malloc(sizeof(char) * (len + 1));
-if (len == 0)
+
+if (str == NULL)
 {
-	return ('\0');
+	return (NULL);
 }
-else if (s == NULL || str == NULL)
+if (s == NULL)
 {
 	return (NULL);
 }
