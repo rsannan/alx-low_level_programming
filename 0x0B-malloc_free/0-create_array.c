@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stddef.h>
 /**
 * create_array - dynamically creates an array initialized to c
 * @size: size of array
@@ -9,13 +11,13 @@
 
 char *create_array(unsigned int size, char c)
 {
+unsigned int i;
+char *s = (char*)malloc(sizeof(c) * size);
+
 if (size == 0)
 {
 	return ('\0');
 }
-unsigned int i;
-char *s = (char*)malloc(sizeof(c) * size);
-
 if (s == NULL)
 {
 	return ('\0');
