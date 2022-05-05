@@ -27,8 +27,10 @@ if (s == NULL)
 	for (l = 0; l < height; l++)
 	{
 		free(s[l]);
+		s[l] = NULL;
 	}
 	free(s);
+	s = NULL;
 	return (NULL);
 }
 for (i = 0; i < height; i++)
