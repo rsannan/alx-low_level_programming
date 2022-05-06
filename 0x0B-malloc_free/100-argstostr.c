@@ -52,7 +52,7 @@ for (i = 0; i < ac; i++)
 		l++;
 		j++;
 	}
-	s[j] = _putchar('\n');
+	s[j] = '\n';
 	j++;
 }
 return (s);
