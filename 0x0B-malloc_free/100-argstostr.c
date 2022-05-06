@@ -37,7 +37,7 @@ for (i = 0; i < ac; i++)
 {
 	tlen = tlen + strlenn(av[i]);
 }
-s = (char *)malloc(sizeof(char) * tlen);
+s = (char *)malloc(sizeof(char) * (tlen + 10));
 if (s == NULL)
 {
 	return (NULL);
@@ -52,7 +52,8 @@ for (i = 0; i < ac; i++)
 		l++;
 		j++;
 	}
-	_putchar('\n');
+	s[j] = _putchar('\n');
+	j++;
 }
 return (s);
 }
