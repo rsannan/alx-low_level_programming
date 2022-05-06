@@ -56,5 +56,6 @@ for (i = 0; i < ac; i++)
 	s[j] = '\n';
 	j++;
 }
+s[j] = '\0';
 return (s);
 }
