@@ -26,7 +26,8 @@ return (i);
 */
 char *argstostr(int ac, char **av)
 {
-unsigned int i, l, j = 0, tlen = 0, slen;
+int i;
+unsigned int  l, j = 0, tlen = 0, slen;
 char *s;
 
 if (ac == 0 || av == NULL)
