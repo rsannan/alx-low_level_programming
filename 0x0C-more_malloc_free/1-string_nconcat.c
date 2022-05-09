@@ -28,29 +28,30 @@ return (i);
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *s;
-unsigned int i = 0, j = 0, len, lens2;
+unsigned int i = 0, j = 0, len, lens1 = 0, lens2 = 0;
 if (s1 == NULL)
-	s1 = "";
-
-if (s2 == NULL)
-	s2 = "";
-
-len = strlenn(s1) + strlenn(s2);
-if (s1 == NULL && s2 == NULL)
 {
-	s = malloc(2);
-	s[0] = '\0';
-	return (s);
+	lens2 = strlenn(s2);
 }
+else if (s2 == NULL)
+{
+	lens1 = strlenn(s1);
+}
+else if (!(s1 == NULL && s2 == NULL))
+{
+	lens1 = strlenn(s1);
+	lens2 = strlenn(s2);
+}
+len = lens1 + lens2;
 s = malloc(sizeof(*s) * (len + 1));
 if (s == NULL)
 	return (NULL);
-while (i < strlenn(s1))
+while (i < lens1)
 {
 	s[i] = s1[i];
 	i++;
 }
-if (n < strlenn(s2))
+if (n < lens2)
 	lens2 = n;
 else
 	lens2 = strlenn(s2);
