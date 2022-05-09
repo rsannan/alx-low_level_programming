@@ -26,7 +26,7 @@ else if (min < 0)
 
 else
 	size = (max - min) + 1;
-s = malloc(sizeof(*s) * size);
+s = malloc(sizeof(int) * size);
 
 if (s == NULL)
 	return (NULL);
