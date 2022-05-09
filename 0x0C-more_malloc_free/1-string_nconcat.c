@@ -43,7 +43,7 @@ else if (!(s1 == NULL && s2 == NULL))
 	lens2 = strlenn(s2);
 }
 len = lens1 + lens2;
-s = malloc(sizeof(*s) * (len + 1));
+s = malloc(sizeof(char) * (len + 1));
 if (s == NULL)
 	return (NULL);
 while (i < lens1)
