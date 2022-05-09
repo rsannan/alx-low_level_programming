@@ -23,7 +23,7 @@ if (r == NULL)
 	return (NULL);
 while (i < nmemb)
 {
-	r[i] = 0;
+	r[i] = '0';
 	i = i + size;
 }
 s = r;
