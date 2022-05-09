@@ -31,10 +31,17 @@ s = malloc(sizeof(int) * (size + 1));
 if (s == NULL)
 	return (NULL);
 num = min;
-for (i = 0; i < size; i++)
+if (max == min)
 {
-	s[i] = num;
-	num = num + 1;
+	s[0] = num;
+}
+else
+{
+	for (i = 0; i < size; i++)
+	{
+		s[i] = num;
+		num = num + 1;
+	}
 }
 return (s);
 }
