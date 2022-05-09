@@ -38,7 +38,7 @@ if (s2 == NULL)
 len = strlenn(s1) + strlenn(s2);
 if (s1 == NULL && s2 == NULL)
 {
-	s = malloc(1);
+	s = malloc(2);
 	s[0] = '\0';
 	return (s);
 }
