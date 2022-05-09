@@ -1,22 +1,6 @@
-#include "main.h"
+#include "main"
 #include <stdlib.h>
 #include <stddef.h>
-/**
-* strlenn - gets length of string
-* @s: string
-*
-* Return: int i
-*/
-unsigned int strlenn(char *s)
-{
-unsigned int i = 0;
-while (*s != '\0')
-{
-	i++;
-	s++;
-}
-return (i);
-}
 /**
 * string_nconcat - adds two strings
 * @s1: string 1
@@ -27,43 +11,34 @@ return (i);
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-unsigned int lens1 = 0, lens2 = 0, i = 0, j = 0;
+unsigned int len = n, index;
 char *s;
 
-if (s1 == NULL && s2 == NULL)
-{
-	s = malloc(sizeof(*s));
-	s[0] = '\0';
-}
-else if (s1 == NULL)
-{
-	lens2 = strlenn(s2);
-}
-else if (s2 == NULL)
-{
-	lens1 = strlenn(s1);
-}
-else
-{
-	lens1 = strlenn(s1);
-	lens2 = strlenn(s2);
-}
-if (n < lens2)
-	lens2 = n;
-s = malloc(sizeof(*s) * (lens1 + lens2 + 1));
+if (s1 == NULL)
+	s1 = "";
+
+if (s2 == NULL)
+	s2 = "";
+
+for (index = 0; s1[index]; index++)
+	len++;
+
+s = malloc(sizeof(*s) * (len + 1));
 if (s == NULL)
 	return (NULL);
-while (i < lens1)
+len = 0;
+
+for (index = 0; s1[index]; index++)
 {
-	s[i] = s1[i];
-	i++;
+	s[len] = s1[index];
+	len++;
 }
-while (j < lens2)
+
+for (index = 0; s2[index] && index < n; index++)
 {
-	s[i] = s2[j];
-	j++;
-	i++;
+	s[len] = s2[index];
+	len++;
 }
-s[i] = '\0';
+s[len] = '\0';
 return (s);
 }
