@@ -36,6 +36,8 @@ if (s2 == NULL)
 	s2 = "";
 
 len = strlenn(s1) + strlenn(s2);
+if (s1 == NULL && s2 == NULL)
+	len = 0;
 s = malloc(sizeof(*s) * (len + 1));
 if (s == NULL)
 	return (NULL);
