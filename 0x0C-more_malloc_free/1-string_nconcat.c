@@ -27,7 +27,7 @@ return (i);
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-int lens1 = 0, lens2 = 0, i = 0, j = 0;
+unsigned int lens1 = 0, lens2 = 0, i = 0, j = 0;
 char *s;
 
 if (s1 == NULL && s2 == NULL)
