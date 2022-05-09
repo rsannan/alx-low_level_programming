@@ -33,7 +33,7 @@ if (s == NULL)
 num = min;
 if (max == min)
 {
-	s[0] = num;
+	s[0] = max;
 }
 else
 {
