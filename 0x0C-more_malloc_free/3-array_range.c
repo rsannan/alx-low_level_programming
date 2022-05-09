@@ -19,13 +19,13 @@ if (max == min)
 	size = 1;
 
 else if (max < 0 && min < 0)
-	size = (-min - (-max));
+	size = (-min - (-max)) + 1;
 
 else if (min < 0)
-	size = (max + (-min));
+	size = (max + (-min)) + 1;
 
 else
-	size = (max - min);
+	size = (max - min) + 1;
 s = malloc(sizeof(*s) * size);
 
 if (s == NULL)
