@@ -23,7 +23,7 @@ if (s == NULL)
 while (i < nmemb)
 {
 	*((char *) s + i) = 0;
-	i++;
+	i = i + size;
 }
 return (s);
 }
