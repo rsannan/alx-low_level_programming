@@ -26,12 +26,12 @@ else if (min < 0)
 
 else
 	size = (max - min) + 1;
-s = malloc(sizeof(int) * size);
+s = malloc(sizeof(int) * (size + 1));
 
 if (s == NULL)
 	return (NULL);
 num = min;
-for (i = 0; i <= size; i++)
+for (i = 0; i < size; i++)
 {
 	s[i] = num;
 	num = num + 1;
