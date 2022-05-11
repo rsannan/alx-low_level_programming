@@ -12,6 +12,8 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *s;
+
+s = malloc(sizeof(dog_t));
 if (s == NULL)
 	EXIT_FAIL;
 
