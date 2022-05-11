@@ -2,7 +2,42 @@
 #include <stddef.h>
 #include "dog.h"
 /**
-* new_dog - creates new dog 
+ * _strlen - Finds the length of a string.
+ * @str: The string to be measured.
+ *
+ * Return: The length of the string.
+ */
+int _strlen(char *str)
+{
+	int len = 0;
+
+	while (*str++)
+		len++;
+
+	return (len);
+}
+
+/**
+ * _strcopy - Copies a string pointed to by src, including the
+ *            terminating null byte, to a buffer pointed to by dest.
+ * @dest: The buffer storing the string copy.
+ * @src: The source string.
+ *
+ * Return: The pointer to dest.
+ */
+char *_strcopy(char *dest, char *src)
+{
+	int index = 0;
+
+	for (index = 0; src[index]; index++)
+		dest[index] = src[index];
+
+	dest[index] = '\0';
+
+	return (dest);
+}
+/**
+* new_dog - creates new dog
 * @name: name of dog
 * @age: age of dog
 * @owner: name of owner
@@ -12,18 +47,31 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-dog_t *s;
-if (name == NULL)
-	*name = '\0';
-if (owner == NULL)
-	*owner = '\0';
-s = malloc(sizeof(dog_t));
-if (s == NULL)
+dog_t *scooby;
+if (name == NULL || owner == NULL || age < 0)
 	return (NULL);
 
-s->name = name;
-s->age = age;
-s->owner = owner;
+scooby = malloc(sizeof(dog_t));
+if (scooby == NULL)
+	return (NULL);
 
-return (s);
+(*scooby).name = malloc(sizeof(char) * (_strlen(name) + 1));
+if ((*scooby).name == NULL)
+{
+	free(scooby);
+	return (NULL);
+}
+
+(*scooby).owner = malloc(sizeof(char) * (_strlen(owner) + 1));
+if ((*scooby).owner == NULL)
+{
+	free((*scooby).name);
+	free(scooby);
+	return (NULL);
+}
+
+scooby->name = _strcopy(scooby->name, name);
+scooby->age = age;
+scooby->owner = _strcopy(scooby->owner, owner);
+return (scooby);
 }
