@@ -12,12 +12,12 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *s;
+if (s == NULL)
+	EXIT_FAIL;
 
 s->name = name;
 s->age = age;
 s->owner = owner;
 
-if (s == NULL)
-	return (NULL);
 return (s);
 }

@@ -1,5 +1,6 @@
 #ifndef DOG_H
 #define DOG_H
+#include <stddef.h>
 /**
 * struct dog - struct representing a dog
 * @name: name of dog
@@ -18,4 +19,5 @@ void print_dog(struct dog *d);
 
 typedef struct dog dog_t;
 dog_t *new_dog(char *name, float age, char *owner);
+#define EXIT_FAIL return(NULL)
 #endif
