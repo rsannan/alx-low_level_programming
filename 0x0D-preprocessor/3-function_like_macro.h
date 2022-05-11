@@ -5,5 +5,5 @@
 		x = -x; \
 		else \
 		x;
-
+int _putchar(char c);
 #endif
