@@ -16,12 +16,16 @@ if (size <= 0)
 {
 return (-1);
 }
+if (cmp == NULL)
+{
+	return (-1);
+}
 for (index = 0; index < size; index++)
 {
 	cmp_result = cmp(array[index]);
 	if (cmp_result != 0)
 	{
-		return (array[index]);
+		return (index);
 	}
 
 }
