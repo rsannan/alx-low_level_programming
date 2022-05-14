@@ -23,7 +23,8 @@ if (argc != 4)
 	printf("Error\n");
 	exit(98);
 }
-if ((num2 == 0) && (*op == '/' || *op == '%'))
+if ((*op == '/' && num2 == 0) ||
+	(*op == '%' && num2 == '0'))
 {
 	printf("Error\n");
 	exit(100);
