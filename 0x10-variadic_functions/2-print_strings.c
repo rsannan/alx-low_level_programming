@@ -5,7 +5,7 @@
 /**
 * print_strings - prints string
 * @separator: separator string
-* @n: number of arguments 
+* @n: number of arguments
 *
 * Return: void
 */
@@ -18,7 +18,7 @@ va_start(ap, n);
 
 for (index = 0; index < n; index++)
 {
-	s = va_arg(ap,char *);
+	s = va_arg(ap, char *);
 	if (s != NULL)
 	{
 		printf("%s", s);
