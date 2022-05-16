@@ -3,8 +3,9 @@
 /**
 * sum_them_all - sums all the parameters
 * @n: number of numbers to sum
+* @...: variable number of arguments
 *
-* Return: sum of all parameters
+* Return: sum of all parameters if n > 0 otherwise 0
 */
 int sum_them_all(const unsigned int n, ...)
 {
