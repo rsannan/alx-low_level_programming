@@ -12,6 +12,10 @@ void free_list(list_t *head)
 int state = 0;
 list_t *now = head;
 list_t *pre_link;
+if (now == NULL)
+{
+	free(now);
+}
 while (state == 0)
 {
 	pre_link = now;
