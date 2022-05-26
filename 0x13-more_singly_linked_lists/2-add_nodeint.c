@@ -3,7 +3,7 @@
 #include "lists.h"
 /**
 * add_nodeint - adds a new node at the start of a list
-* @h: head pointer
+* @head: head pointer
 * @n: number to add to list
 *
 * Return: address of new element otherwise NULL
