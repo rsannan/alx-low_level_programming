@@ -20,7 +20,7 @@ if (newnode == NULL)
 newnode->n = n;
 while (temp)
 {
-	if (count != (idx - 1))
+	if (count != (idx - 1) && temp->next != NULL)
 	{
 		count++;
 		temp = temp->next;
