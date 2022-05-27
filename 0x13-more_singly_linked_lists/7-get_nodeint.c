@@ -15,17 +15,15 @@ listint_t *temp = head;
 
 if (head == NULL)
 	return (NULL);
-while (head)
+if (index == 0)
 {
-	if (count == index)
-	{
-		return (temp);
-	}
-	else
-	{
-		temp = temp->next;
-		count++;
-	}
+return (head->next);
 }
-return (NULL);
+for (count = 0; count < index; count++)
+{
+	if (temp->next == NULL)
+		return (NULL);
+	temp = temp->next;
+}
+return (temp);
 }
