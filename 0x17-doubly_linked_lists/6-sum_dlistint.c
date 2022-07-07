@@ -9,8 +9,9 @@ int sum_dlistint(dlistint_t *head)
 {
 	int sum_n = 0;
 	dlistint_t *now = head;
+
 	if (head == NULL)
-		return(sum_n);
+		return (sum_n);
 	while (now != NULL)
 	{
 		sum_n = sum_n + now->n;
