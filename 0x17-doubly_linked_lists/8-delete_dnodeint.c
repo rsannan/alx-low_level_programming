@@ -17,7 +17,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	if (copy == NULL)
 		return (-1);
 
-	for (node = 0; node < (index - 1); node++)
+	for (node = 0; node < index; node++)
 	{
 		if (copy == NULL)
 			return (-1);
