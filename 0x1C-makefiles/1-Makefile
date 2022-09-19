@@ -1,3 +1,4 @@
+CC = gcc
 SRC = *.c
 all: $(SRC)
 	$(CC) -o school $(SRC)
